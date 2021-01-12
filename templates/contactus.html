@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c6153d298d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename = './css/contactus.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename = './img/favicon.png')}}" type="image/x-icon">
+    <title>DRAIC | Contact</title>
+</head>
+
+{% extends "layout.html" %}
+{% block body %}
+    <div class="row row-content justify-content-center">
+        <div class="col-3  align-self-center text-center" id="sidebarIcon">
+            <i class="fas fa-bars fa-2x" style="margin-top: 0.6em; color: aliceblue;" onclick="openNav()"></i>
+
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <img class="logoCorner" src="{{url_for('static', filename = './img/logo_white.png')}}" alt="">
+    </div>
+
+    <div class="container">
+
+
+        <div class="row justify-content-center">
+            <!-- #00A0FF -->
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-center pt-3">
+                    <h2 style="text-align: center; color: #00A0FF;" id="title">Conta<span style="color: black;">ct Us</span></h2>
+
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <form action="/contactus"  method="POST">
+                            <div class="form-group">
+                                <!-- <label for="name"> Full Name</label> -->
+                                <input type="text" class="form-control" id="Name" placeholder="Enter Full Name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="exampleInputEmail1"> Email address</label> -->
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="Contact"> Contact No.</label> -->
+                                <input type="tel" class="form-control" id="number" name="contact" placeholder="Contact No" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="exampleFormControlTextarea1"> Message</label> -->
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="msg" placeholder="Add your comments!"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+                                <label class="form-check-label" for="exampleCheck1">Send me a copy of the email</label>
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">Your email will not be shared with anyone
+                                else.</small>
+                            <button type="submit" class="btn btn-dark"
+                                style="margin-top: 20px; margin-bottom: 25px; font-size: 18px;">Submit</button>
+                        </form>
+                        <h4>You can also connect us on :</h4>
+                        </div>
+                        <div class="row p-2 justify-content-center" id="social" style="background-color:white;">
+                            <div class="col-3" style="padding-top: 5px;">
+                                <a href="mailto: draic.pune@gmail.com"><img src="{{url_for('static', filename = './img/gmail.png')}}" alt="" height="50px" width="50px"></a>
+                            </div>
+                            <div class="col-3" style="padding-top: 5px;">
+                                <a href="https://facebook.com/draicdypcoe"><img src="{{url_for('static', filename = './img/fb.png')}}" alt="" height="50px" width="50px"></a>
+                            </div>
+                            <div class="col-3" style="padding-top: 5px;">
+                                <a href="https://instagram.com/draicdypcoe"><img src="{{url_for('static', filename = './img/insta.png')}}" alt="" height="50px" width="50px"></a>
+                            </div>
+                            <div class="col-3" style="padding-top: 5px;">
+                                <a href="https://in.linkedin.com/company/d-y-patil-robotics-ai-club"><img src="{{url_for('static', filename = './img/linkedin.webp')}}" alt=""
+                                        height="50px" width="50px"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script>function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }</script>
+{% endblock %}
+</html>
+

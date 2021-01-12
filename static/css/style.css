@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+@font-face {
+    font-family: 'ethnocentricregular';
+    src: url('../fonts/ethnocentric_rg-webfont.woff2') format('woff2'),
+         url('../fonts/ethnocentric_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    /* background-image: linear-gradient(180deg, #097BBF, #053E60); */
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    background: url('../img/bg_dark.jpg')  no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2E2932;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background-color: #fff;
+   border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container{
+    width: 80%;
+}
+
+nav{
+    cursor: pointer;
+    position: fixed;
+    background-color: #202020;
+    padding: 0.2em 1em;
+    left: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* border: 1px solid #ffffff; */
+    border-radius: 0 1.2em 1.2em 0;
+    transition: width 5000ms ease;
+    box-shadow: 0 0 10px #ffffff;
+    z-index: 1;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li{
+    width: 100%;
+    padding: 2em 0;
+    
+}
+.nav-box a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 1.2em;
+}
+.nav-box i{
+    font-size: 1.6em;
+}
+
+.nav-box label{
+    display: none;
+}
+
+nav :hover{
+    transition: width 2000ms ease;
+}
+
+nav:hover label{
+    display: inline;
+    padding: 0 1rem;
+    vertical-align: middle;
+}
+
+nav ul li :hover{
+    color: #00A0FF;
+}
+
+a.active{
+    color: #00A0FF;
+}
+
+/* Header section styling */
+header{
+    position: fixed;
+}
+h1{
+    font-family: "ethnocentricregular", "Helvetica";
+    float: left;
+    margin-top: 0.6em;
+}
+
+.hero-section{
+    margin: 3rem 0 10rem 0;
+}
+.club-name{
+    color: #ffffff;
+    font-family: "ethnocentricregular", "Helvetica";
+    text-align: center;
+    padding: 2rem;
+}
+.club-name-main{
+    font-size: 2.8em;
+}
+.logo{
+    margin: auto;
+    padding: 2rem;
+    height: auto;
+    max-width: 100%;
+}
+.carousel{
+    /* margin: 8em 0; */
+    /* width: auto; */
+}
+
+#carousel-title{
+    font-family: "ethnocentricregular", "Helvetica";
+    font-size: 1.8em;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* recent updates */
+.recent-updates{
+    margin: 240px 0 60px;
+    /* background-image: url('../img/discussions.webp'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    /* padding: 2000dp 0; */
+}
+#recent-1{
+    background-image: url('../img/slider_1.png');
+}
+#recent-2{
+    background-image: url('../img/discussions.webp');
+}
+.recent-updates p{
+   font-family: "ethnocentricregular", "Helvetica";
+   color: #ffffff;
+   size: 2em;
+   position: absolute;
+   /* left: 8em; */
+   padding: 0;
+   margin: 0;
+}
+
+#recent-1 .text-large{
+    margin: auto 0 ;
+    font-size: 1.6em;
+    /* left: 4em; */
+    top: 10em;
+}
+
+.text-small{
+    bottom: 8em;
+    font-size: 1.4em;
+    left: 6em;
+}
+.text-large{
+    bottom: 2em;
+    font-size: 2em;
+    left: 4em;
+}
+
+/* about us section */
+.about-heading{
+    font-family: "ethnocentricregular", "Helvetica";
+    text-align: center;
+    padding-top: 1em;
+}
+.about-row{
+    margin: 0;
+    padding: 2em;
+
+    /* border-bottom: #ffffff 1px solid; */
+
+}
+
+.about-sub-heading{
+    font-size: 3em;
+    font-family: "Ubuntu", "sans-serif";
+    text-align: center;
+    padding: 2em;
+    color: #00A0FF;
+    letter-spacing:0.05em;
+    /* border-right: #ffffff 1px solid; */
+}
+.about-para{
+    font-family: sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    margin: auto 0;
+    padding: 0.8em 0.2em;
+}
+.about-image-right{
+    background-image: url('../img/line-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.about-image-left{
+    background-image: url('../img/line-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 768px) {
+    nav {
+      display: none;
+    }
+    .logo{
+        display: none;
+
+
+    }
+    .club-name-main{
+        font-size: 1.8em;   
+    }
+    .display-3{
+        font-size: 2.0em;
+    }
+    .about-row{
+        padding: 0;
+    }
+    .about-sub-heading{
+       font-size: 2em;
+    }
+    .about-para{
+        text-align: center;
+
+    }
+    .about-image-left{
+        display: none;
+
+    }
+    .about-image-right{
+        display: none;
+    }
+    #responsive1{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+
+    #responsive0{
+        display: none;
+    }
+    #sidebarIcon{
+        display: none;  
+    }
+}
+hr{
+    border: 1px solid rgb(255, 255, 255);
+}
+.logoCorner{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 250%;
+ width: auto;
+    z-index: 1;
+} 
+.logoCorner1{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 10%;
+  width: auto;
+    z-index: 3;
+  }      
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

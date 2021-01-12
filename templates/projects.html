@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DRAIC | Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/c6153d298d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/styleProjects.css')}}" />
+  <link rel="shortcut icon" href="{{url_for('static', filename = './img/favicon.png')}}" type="image/x-icon">
+</head>
+
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="row">
+
+  <img class="logoCorner" src="{{url_for('static', filename = './img/logo_white.png')}}" alt="">
+</div>
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <div class="container">
+    <h2 class="project-heading">
+      <i class="fas fa-bars fa-lg" id="sidebarIcon" style="margin-top: 0.6em;" onclick="openNav()"></i>
+      DRAIC <span style="color: #00A0FF;">Projects</span></h2>
+  </div>
+
+</div>
+
+
+
+
+<!-- <div class="row">
+
+  <img class="logoCorner" src="{{url_for('static', filename = './img/logo_white.png')}}" alt="">
+</div>
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <div class="container">
+    <h2 class="project-heading">
+      <i class="fas fa-bars fa-lg" id="sidebarIcon" style="margin-top: 0.6em;" onclick="openNav()"></i>
+      DRAIC <span style="color: #00A0FF;">Projects</span></h2>
+  </div>
+
+</div> -->
+<hr>
+<br>
+<div class="container">
+
+  <div class="row">
+    <h4 class="text-center">
+      Our team focuses on Project-based learning. Besides participating in
+      various National and International Competitions, we also work on several
+      projects throughout the year. Here are details of some of our projects.
+    </h4>
+  </div>>
+
+  <div class="row">
+    <div class="col-10 col-md-4 text-center">
+      <div class="card">
+        <div class="circle" id="project_1"> </div>
+        <div class="card-body">
+          <h6>Autonomous Quadrupled Robot</h6>
+          <p>
+            Development of 3D Printed Autonomous four-legged robot with Servo
+            Motors for actuation.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-10 col-md-4">
+      <div class="card">
+        <div class="circle" id="project_2"> </div>
+        <div class="card-body">
+          <h6>Customized 3D Printer</h6>
+          <p>
+            Developed a customized 3D Printer, with PLA as a filament by utilizing some open source resources.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-10 col-md-4">
+      <div class="card">
+        <div class="circle" id="project_3"> </div>
+        <div class="card-body">
+          <h6>Autonomous Path Finder Robot</h6>
+          <p>
+            Made an Autonomous Obstacle avoider and Path finder robot with Omni Wheel drive and Ultrasonic Sensor.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+<script>function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+{% endblock %}
+
+</html>
+
+
+<!-- {{url_for('static', filename = '')}} -->

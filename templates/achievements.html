@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c6153d298d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = './css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename = './img/favicon.png') }}" type="image/x-icon">
+    <title>DRAIC | Achievements</title>
+</head>
+{% extends "layout.html" %}
+{% block body %}
+<div class="row">
+    <div class="col-md-2">
+        <img class="logoCorner" src="{{ url_for('static', filename = './img/logo_white.png') }}" alt="">
+    </div>
+    <div class="offset-1 text-center">
+        <h2 class="about-heading">Achievements <span style="color: #00A0FF;">2019-20</span></h2>
+    </div>
+
+</div>
+<!-- <hr style="width:50%" /> -->
+
+<div class="container">
+
+<div class="row row-content" >
+
+    <div class="row about-row">
+        <div class="col-12 col-md-5 p-2 align-self-center text-center">
+            <img src="{{ url_for('static', filename = './img/ach1a.webp') }}"  height="80%" width="80%" alt="">
+        </div>
+        <div class=" col-md-1 about-image-right">
+            
+        </div>
+        <div class="col-12 col-md-6 about-para">
+            1. Second Runner-up at Innovate for Smart Pimpri Chinchwad, innovation Challenge organised by PCSCL, PCMC & PCCOE, Pune.
+            <br />
+            ​Team Members: Shreyash Choppawar, Amit Prasad, Vedansh Shrivastav
+        </div>
+    </div>
+    <div class="row about-row">
+        <!-- <div class="col-12 col-md-5 p-2 align-self-center justify-content-center text-center" id="responsive0">
+            <img src="{{ url_for('static', filename = './img/ach1b.webp') }}"  height="80%" width="80%" alt="">
+        </div>   -->
+        <div class="col-12 col-md-6 about-para">
+            2. First and Second Position at Techtatva Electronics Competition Organised by EnTC Dept, DYPCOE, Pune.
+            <br />
+            ​Team Member: Sagar Warungase, Samiksha Bhokare, Dibyanshu Sharma
+        </div>
+        <div class=" col-md-1 about-image-left">
+          
+        </div>
+        <div class="col-12 col-md-5 p-2 align-self-center justify-content-center text-center" id="responsive1">
+            <img src="{{ url_for('static', filename = './img/ach1b.webp') }}"  height="80%" width="80%" alt="">
+        </div>                  
+
+    </div>
+    <div class="row about-row">
+        <div class="col-12 col-md-5 p-2 align-self-center justify-content-center text-center">
+            <img src="{{ url_for('static', filename = './img/ach1c.webp') }}"  height="80%" width="80%" alt="">
+        </div>
+        <div class=" col-md-1 about-image-right">
+            
+        </div>
+        <div class="col-12 col-md-6 about-para">
+            3. Second Runner-up at COEP Mindspark-19 Search & Destroy, organised by COEP, Pune.
+           <br />
+            Team Members: Arvind Patel
+        </div>
+    </div>
+    <div class="row about-row">
+        <!-- <div class="col-12 col-md-5 p-2 align-self-center justify-content-center text-center" id="responsive0">
+            <img src="{{ url_for('static', filename = './img/ach1d.png') }}" height="80%" width="80%" alt="">
+        </div> -->
+        <div class="col-12 col-md-6 about-para">
+            4. First Position at Bro Code & Code Capture Competition organised by PCCOE, Ravet.
+            <br />
+            ​Team Members: Arvind Patel
+        </div>
+        <div class=" col-md-1 about-image-left">
+    
+        </div>
+        <div class="col-12 col-md-5 p-2 align-self-center justify-content-center text-center" id="responsive1">
+            <img src="{{ url_for('static', filename = './img/ach1d.png') }}" height="80%" width="80%" alt="">
+        </div>
+    
+    </div>
+    
+</div>
+</div>
+
+</div>
+
+<script>function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+{% endblock %}
+
+</html>
+
+
+
+<!-- {{ url_for('static', filename = '') }} -->
